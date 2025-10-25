@@ -5,4 +5,5 @@ if __name__ == '__main__':
         name, *line = input().split()
         scores = list(map(float, line))
         student_marks[name] = scores
-    query_name = input()
+query_name = input()
+print(format(sum(student_marks[query_name])/len(student_marks[query_name]),".2f"))
